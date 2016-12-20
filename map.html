@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+    <script script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script>
+
+    <!-- use these cartodb.css links if you are using https -->
+    <!--link rel="stylesheet" href="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/themes/css/cartodb.css" /-->
+
+    <!-- use this cartodb.js link if you are using https -->
+    <!-- script src="https://cartodb-libs.global.ssl.fastly.net/cartodb.js/v3/3.15/cartodb.js"></script -->
+  </head>
+  <body>
+    <div id="map">
+
+    </div>
+
+    <script type="text/javascript">
+      window.onload = function() {
+      var vizjson = 'https://graph-zahl.carto.com/api/v2/viz/617fbd4a-4788-11e6-b10b-0e3ebc282e83/viz.json';
+      cartodb.createVis('map', vizjson);
+    }
+    </script>
+  </body>
+</html>
